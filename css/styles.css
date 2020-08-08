@@ -1,0 +1,173 @@
+/* GENERAL STYLE */
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    background-color:  #eaf5f9;
+}
+h1,
+h3,
+h4 {
+    font-weight: 300;
+}
+h3 {
+    font-style: italic;
+}
+h4 {
+    text-align: center;
+}
+p {
+    line-height: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+    
+}
+
+/* NAVIGATION */
+header {
+    height: 300px;
+    background:  url("../images/bg.jpg") no-repeat center;
+                -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+  color: #fff;
+
+}
+nav {
+    padding-top: 15px;
+    margin-bottom: 100px;
+}
+nav ul {
+    display: flex;
+    flex: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: flex-end;
+  
+}
+nav ul li {
+margin-left: 30px;
+
+}
+.title {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.title h1 {
+    padding-bottom: 5px;
+}
+/* MAIN SECTIONS */
+main h1 {
+    font-size: 20px;
+}
+
+main {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.momentum {
+    margin: 60px 0;
+}
+
+/* FORM */
+
+form {
+    
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 2%;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    
+}
+
+fieldset {
+    border: 0;
+    margin-top: 25px;
+}
+
+label, 
+input {
+    display: block;
+    
+}
+input {
+    width: 100%; 
+   
+    
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 32px;
+    font-size: 14px;
+    margin: 3px 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+  
+}
+#name,
+#surname {
+    margin-bottom: 20px;
+}
+
+legend {
+    margin: 0 auto;
+    width: 80%;
+}
+
+button {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #6495ED;
+    border: 1px solid #6495ED;
+}
+input[type="text"]:hover,
+input[type="email"]:hover {
+    border-bottom: 1px solid #6495ED;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+    br {
+        display: none;
+    }
+    main {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+   
+}
+
+
+@media (min-width: 1020px) {
+    .title h1 {
+        font-size: 46px;
+    }
+    main {
+        width: 45%;
+        margin: 0 auto;
+    }
+    main h1 {
+        font-size: 32px;
+    }
+}
